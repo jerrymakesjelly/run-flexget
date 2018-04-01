@@ -1,4 +1,5 @@
 #/bin/bash
+
 # Basic Config
 host="HOST"
 username="USERNAME"
