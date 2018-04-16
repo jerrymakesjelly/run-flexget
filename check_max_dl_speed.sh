@@ -18,6 +18,7 @@ global_speed_limit=`echo ${transfer_info} | sed -n 's/.*"dl_rate_limit":\([0-9]*
 # Check parameters
 if [ -z "$global_speed" -o -z "$global_speed_limit" ]; then
     echo "$0: Cannot fetch any parameters."
+    echo "$0: Debug Info: ${transfer_info}"
     exit 255
 fi
 

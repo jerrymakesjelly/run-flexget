@@ -22,6 +22,7 @@ queue_enabled=`echo ${prefer} | sed -n 's/.*"queueing_enabled":\(true\|false\),.
 # Check parameters
 if [ -z "$queue_enabled" -o -z "$dl_list" -o -z "$max_download" ]; then
     echo "$0: Cannot fetch any parameters."
+    echo "$0: Debug Info: ${prefer}"
     exit 255
 fi
 
